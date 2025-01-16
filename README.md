@@ -45,8 +45,8 @@ cd Linkedin-liker
 2. Chiffrez ces fichiers :
 ```bash
 python encrypt_secrets.py
-supprimer les fichiers .txt
 ```
+supprimer les fichiers .txt
 
 ### Étape 3 : Démarrer avec Docker 🐋
 1. Construisez et démarrez le conteneur Docker :
