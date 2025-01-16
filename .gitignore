@@ -1,0 +1,36 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.swp
+
+# Environnement virtuel
+venv/
+.env/
+
+# Secrets
+*.enc
+encryption.key
+linkedin_username.txt
+linkedin_password.txt
+linkedin_profiles.txt
+
+# Logs
+logs/
+*.log
+
+# Docker
+*.pid
+docker-compose.override.yml
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# IDE Configurations
+.vscode/
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db

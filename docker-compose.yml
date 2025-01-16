@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  linkedin-liker:
+    build: .
+    volumes:
+      - ./encryption.key:/app/encryption.key:ro
+      - ./logs:/app/logs
+    secrets:
+      - linkedin_username.enc
+      - linkedin_password.enc
+      - linkedin_profiles.enc
+
+secrets:
+  linkedin_username.enc:
+    file: ./linkedin_username.enc
+  linkedin_password.enc:
+    file: ./linkedin_password.enc
+  linkedin_profiles.enc:
+    file: ./linkedin_profiles.enc
