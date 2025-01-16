@@ -95,12 +95,12 @@ def like_latest_posts(driver, profile_url):
 
         logging.info(f"{len(posts)} posts trouvés sur la page d'activités récentes.")
 
-        # Récupérer l'heure des posts et trier les posts par ordre décroissant
+        # Récupérer les heures des posts
         posts_with_time = []
         for post in posts:
             try:
-                # Récupérer l'heure du post
-                time_element = post.find_element(By.XPATH, ".//span[@aria-hidden='true']")
+                # Récupérer l'heure de publication
+                time_element = post.find_element(By.XPATH, ".//span[@aria-hidden='true'][contains(text(), 'h') or contains(text(), 'j')]")
                 time_text = time_element.text.strip()
                 logging.info(f"Heure du post : {time_text}")
 
