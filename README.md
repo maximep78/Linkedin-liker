@@ -32,8 +32,8 @@ pip install -r requirements.txt
 ## Installation 🖥️
 ### Étape 1 : Cloner le dépôt
 ```bash
-git clone <URL_DU_DÉPÔT>
-cd <NOM_DU_RÉPERTOIRE>
+git clone https://github.com/maximep78/Linkedin-liker.git
+cd Linkedin-liker
 ```
 
 ### Étape 2 : Configurer les secrets 🔑
@@ -45,6 +45,7 @@ cd <NOM_DU_RÉPERTOIRE>
 2. Chiffrez ces fichiers :
 ```bash
 python encrypt_secrets.py
+supprimer les fichiers .txt
 ```
 
 ### Étape 3 : Démarrer avec Docker 🐋
